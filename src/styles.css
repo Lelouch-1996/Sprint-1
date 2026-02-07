@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0f172a; color: #e2e8f0; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.header h1 { margin: 0; font-size: 22px; }
+.nav { display: flex; gap: 8px; }
+.nav button { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
+.nav button.active { border-color: #94a3b8; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+.card { background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 16px; }
+.card h2 { margin: 0 0 10px 0; font-size: 18px; }
+.card h3 { margin: 12px 0 6px 0; font-size: 14px; color: #cbd5e1; }
+.muted { color: #94a3b8; }
+.hint { color: #94a3b8; font-size: 12px; margin-top: 10px; }
+
+.form { display: grid; gap: 10px; }
+label { display: grid; gap: 6px; font-size: 13px; color: #cbd5e1; }
+input, select, textarea { background: #0b1220; border: 1px solid #334155; border-radius: 10px; color: #e2e8f0; padding: 10px; outline: none; }
+textarea { resize: vertical; }
+
+button { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; padding: 10px 12px; border-radius: 10px; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+button.ghost { background: transparent; }
+.error { color: #fca5a5; margin: 0; font-size: 12px; }
+
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.listItem { width: 100%; text-align: left; background: #0b1220; border: 1px solid #334155; border-radius: 12px; padding: 12px; }
+.listItem.active { border-color: #94a3b8; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.row.space { justify-content: space-between; }
+.pill { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid #334155; color: #cbd5e1; }
+.status { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid #334155; }
+.desc { margin-top: 8px; font-size: 13px; color: #e2e8f0; }
+.meta { margin-top: 6px; font-size: 12px; color: #94a3b8; }
+.descBlock { margin: 0; padding: 10px; background: #0b1220; border: 1px solid #334155; border-radius: 12px; }
+
+.kv { display: grid; gap: 6px; }
+.k { color: #94a3b8; }
+.v { color: #e2e8f0; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; }
