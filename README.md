@@ -11,7 +11,7 @@ Entregar un MVP en React que permita **crear** reportes y **consultarlos** (list
 - Crear reporte (tipo, descripción, ubicación) con validación
 - Guardado y lectura desde localStorage
 - Listado + detalle
-- Seed de 1 reporte demo (si está vacío)
+- Seed de 1 reporte demo
 
 ## Cómo correr el proyecto
 1. Instala dependencias:
